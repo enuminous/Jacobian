@@ -1,0 +1,43 @@
+name: Pinned Lean / Lake / elan full replay
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pinned-replay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    env:
+      LEAN_NUM_THREADS: '2'
+      USE_MATHLIB_CACHE: '1'
+    steps:
+      - name: Check out Monolithic replay harness
+        uses: actions/checkout@v4
+      - name: Record runner environment
+        run: |
+          uname -a
+          free -h
+          df -h .
+      - name: Install elan (the Lean toolchain manager)
+        shell: bash
+        run: |
+          curl --fail --location --show-error --silent --retry 3 \
+            https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --no-modify-path
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Verify author source, run full lake build and kernel axiom audit
+        shell: bash
+        run: bash scripts/verify.sh
+      - name: Upload raw build and axiom receipts (including failure cases)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jacobian-lean-4-28-raw-receipts
+          path: .replay/receipts/
+          if-no-files-found: warn
+          retention-days: 90
