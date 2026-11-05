@@ -1,0 +1,4 @@
+lake build exit=0
+DimensionTwoCounterexample/GeometricBridge.lean exit=0
+DimensionTwoCounterexample/FinalTheorem.lean exit=0
+KernelAudit.lean exit=0

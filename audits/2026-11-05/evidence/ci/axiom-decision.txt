@@ -1,0 +1,3 @@
+Terminal theorem: DimensionTwoCounterexample.Final.fullCounterexample
+Axioms from raw Lean output: Classical.choice, Quot.sound, propext
+PASS: axiom output is within the explicit reported trust boundary

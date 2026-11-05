@@ -1,0 +1,2 @@
+DimensionTwoCounterexample.Final.fullCounterexample : DimensionTwoCounterexample.Final.FullCounterexampleStatement
+'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]

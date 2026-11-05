@@ -1,0 +1,14 @@
+{
+  "html": "PASS",
+  "rows": 52,
+  "local_links": "PASS",
+  "duplicate_ids": 0,
+  "browser_search": "PASS: Weasel yields 1 of 52",
+  "browser_filter": "PASS: FAIL yields 3 of 52",
+  "browser_disclosure": "PASS: Weasel expands with inputs, transform, criterion, output and links",
+  "desktop_visual_review": "PASS",
+  "mobile_browser_review": "UNRESOLVED: no viewport emulation performed",
+  "python_compile": "PASS",
+  "shell_syntax": "PASS",
+  "proof_scripts_modified": false
+}

@@ -1,6 +1,10 @@
 # Jacobian — independent Lean 4.28.0 replay
 
-**Status: reproducibility build under verification; not a second mathematical proof.**
+**Status: pinned replay verified in recorded CI; harness audit findings remain open.**
+
+[Audit index](index.html) · [Full Zoo audit (2026-11-05)](audits/2026-11-05/REPORT.md) · [52-entry operation ledger](audits/2026-11-05/ZOO_OPERATIONS.md) · [Raw evidence](audits/2026-11-05/evidence/)
+
+The recorded Lean replay passed with the standard axiom allowlist. Independent polynomial checks also passed. The audit reproduced parser ambiguity and retained-file defects in the harness; see the report for their exact limits. All 52 Zoo entries were assessed, with five applicable source operators executed. This does not claim independent human certification or a characteristic-zero result.
 
 A fresh, pinned, third-party reproduction harness for Romy Mondello's
 *Dimension-Two Counterexample to the Separable Jacobian Conjecture in Characteristic Two*
@@ -53,7 +57,7 @@ For a manually hydrated source directory:
 
 ```bash
 bash scripts/fetch-source.sh
-cd .replay/anc/lean
+cd .replay/source/anc/lean
 lake build
 lake env lean KernelAudit.lean
 ```

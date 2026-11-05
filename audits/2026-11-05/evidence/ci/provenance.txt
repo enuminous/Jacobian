@@ -1,0 +1,7 @@
+URL: https://raw.githubusercontent.com/integrate-your-mind/integrate-your-mind.github.io/250457153d78427be7f2c5d1b65b1cdcd6658ca7/dimension-two-counterexample-arxiv.zip
+Git source commit: 250457153d78427be7f2c5d1b65b1cdcd6658ca7
+Expected Git blob: d09deacf37efecc3fc20d8d9480435e6d203c36e
+Actual Git blob: d09deacf37efecc3fc20d8d9480435e6d203c36e
+bc8010009f178b9013ea2a8c656f12df159cc6156c1e53eaf23d0d235596f478  /home/runner/work/Jacobian/Jacobian/.replay/dimension-two-counterexample-arxiv.zip
+Pinned Lean: leanprover/lean4:v4.28.0
+Pinned Mathlib: 8f9d9cff6bd728b17a24e163c9402775d9e6a365

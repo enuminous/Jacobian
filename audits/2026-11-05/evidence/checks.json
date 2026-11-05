@@ -1,0 +1,474 @@
+{
+  "baseline": "1a4a649c77df4d869cc88d48d76a46fa489c3725",
+  "protocol_sha256": "510f52a399565dd97abbc4f9a9c11b79ba418f11560165fffd747b0e3e02c154",
+  "parser": {
+    "status": "FAIL",
+    "cases": [
+      {
+        "name": "allowed",
+        "input": "'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+        "expected_accept": true,
+        "accepted": true,
+        "correct": true,
+        "exit": 0,
+        "stdout": "Terminal theorem: DimensionTwoCounterexample.Final.fullCounterexample\nAxioms from raw Lean output: Classical.choice, Quot.sound, propext\nPASS: axiom output is within the explicit reported trust boundary\n",
+        "stderr": ""
+      },
+      {
+        "name": "none",
+        "input": "'DimensionTwoCounterexample.Final.fullCounterexample' does not depend on any axioms\n",
+        "expected_accept": true,
+        "accepted": true,
+        "correct": true,
+        "exit": 0,
+        "stdout": "Terminal theorem: DimensionTwoCounterexample.Final.fullCounterexample\nAxioms from raw Lean output: none\nPASS: axiom output is within the explicit reported trust boundary\n",
+        "stderr": ""
+      },
+      {
+        "name": "sorry",
+        "input": "'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [sorryAx]\n",
+        "expected_accept": false,
+        "accepted": false,
+        "correct": true,
+        "exit": 1,
+        "stdout": "Terminal theorem: DimensionTwoCounterexample.Final.fullCounterexample\nAxioms from raw Lean output: sorryAx\n",
+        "stderr": "FAIL: unapproved axioms: sorryAx\n"
+      },
+      {
+        "name": "custom",
+        "input": "'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [User.assumption]\n",
+        "expected_accept": false,
+        "accepted": false,
+        "correct": true,
+        "exit": 1,
+        "stdout": "Terminal theorem: DimensionTwoCounterexample.Final.fullCounterexample\nAxioms from raw Lean output: User.assumption\n",
+        "stderr": "FAIL: unapproved axioms: User.assumption\n"
+      },
+      {
+        "name": "missing",
+        "input": "",
+        "expected_accept": false,
+        "accepted": false,
+        "correct": true,
+        "exit": 1,
+        "stdout": "",
+        "stderr": "UNRESOLVED: terminal theorem not printed in raw Lean output\n"
+      },
+      {
+        "name": "truncated",
+        "input": "'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext\n",
+        "expected_accept": false,
+        "accepted": false,
+        "correct": true,
+        "exit": 1,
+        "stdout": "",
+        "stderr": "UNRESOLVED: unable to parse the actual #print axioms report\n"
+      },
+      {
+        "name": "wrong_name",
+        "input": "'Other.theorem' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+        "expected_accept": false,
+        "accepted": false,
+        "correct": true,
+        "exit": 1,
+        "stdout": "",
+        "stderr": "UNRESOLVED: terminal theorem not printed in raw Lean output\n"
+      },
+      {
+        "name": "suffix_name",
+        "input": "'Other.DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+        "expected_accept": false,
+        "accepted": true,
+        "correct": false,
+        "exit": 0,
+        "stdout": "Terminal theorem: DimensionTwoCounterexample.Final.fullCounterexample\nAxioms from raw Lean output: Classical.choice, Quot.sound, propext\nPASS: axiom output is within the explicit reported trust boundary\n",
+        "stderr": ""
+      },
+      {
+        "name": "duplicate",
+        "input": "'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+        "expected_accept": false,
+        "accepted": true,
+        "correct": false,
+        "exit": 0,
+        "stdout": "Terminal theorem: DimensionTwoCounterexample.Final.fullCounterexample\nAxioms from raw Lean output: Classical.choice, Quot.sound, propext\nPASS: axiom output is within the explicit reported trust boundary\n",
+        "stderr": ""
+      },
+      {
+        "name": "contradictory",
+        "input": "'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [sorryAx]\n",
+        "expected_accept": false,
+        "accepted": true,
+        "correct": false,
+        "exit": 0,
+        "stdout": "Terminal theorem: DimensionTwoCounterexample.Final.fullCounterexample\nAxioms from raw Lean output: Classical.choice, Quot.sound, propext\nPASS: axiom output is within the explicit reported trust boundary\n",
+        "stderr": ""
+      },
+      {
+        "name": "reverse_contradictory",
+        "input": "'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [sorryAx]\n'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+        "expected_accept": false,
+        "accepted": false,
+        "correct": true,
+        "exit": 1,
+        "stdout": "Terminal theorem: DimensionTwoCounterexample.Final.fullCounterexample\nAxioms from raw Lean output: sorryAx\n",
+        "stderr": "FAIL: unapproved axioms: sorryAx\n"
+      },
+      {
+        "name": "trailing_junk",
+        "input": "'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound] unexpected trailing text\n",
+        "expected_accept": false,
+        "accepted": true,
+        "correct": false,
+        "exit": 0,
+        "stdout": "Terminal theorem: DimensionTwoCounterexample.Final.fullCounterexample\nAxioms from raw Lean output: Classical.choice, Quot.sound, propext\nPASS: axiom output is within the explicit reported trust boundary\n",
+        "stderr": ""
+      }
+    ]
+  },
+  "weasel": {
+    "status": "FAIL",
+    "findings": [
+      {
+        "perturbation": {
+          "text": "'Other.DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+        },
+        "severity": 1.0,
+        "cost": 1.0,
+        "reproducibility": 1.0,
+        "explanation": "Authorized bounded case produced severity 1.000"
+      },
+      {
+        "perturbation": {
+          "text": "'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+        },
+        "severity": 1.0,
+        "cost": 1.0,
+        "reproducibility": 1.0,
+        "explanation": "Authorized bounded case produced severity 1.000"
+      },
+      {
+        "perturbation": {
+          "text": "'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [sorryAx]\n"
+        },
+        "severity": 1.0,
+        "cost": 1.0,
+        "reproducibility": 1.0,
+        "explanation": "Authorized bounded case produced severity 1.000"
+      },
+      {
+        "perturbation": {
+          "text": "'DimensionTwoCounterexample.Final.fullCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound] unexpected trailing text\n"
+        },
+        "severity": 1.0,
+        "cost": 1.0,
+        "reproducibility": 1.0,
+        "explanation": "Authorized bounded case produced severity 1.000"
+      }
+    ],
+    "meaning": "FAIL is target rejection robustness; search successfully found witnesses."
+  },
+  "stale_file": {
+    "status": "FAIL",
+    "extra_survived": true,
+    "exit": 0,
+    "stdout": "Actual Git blob: d09deacf37efecc3fc20d8d9480435e6d203c36e\nbc8010009f178b9013ea2a8c656f12df159cc6156c1e53eaf23d0d235596f478  /tmp/jacobian-zoo-apqnbx77/seeded/dimension-two-counterexample-arxiv.zip\nPASS: frozen Mathlib revision 8f9d9cff6bd728b17a24e163c9402775d9e6a365\nPinned Lean: leanprover/lean4:v4.28.0\nPinned Mathlib: 8f9d9cff6bd728b17a24e163c9402775d9e6a365\nPASS: Author source archive and Lean source digests validated.\n",
+    "stderr": ""
+  },
+  "corrupt_archive": {
+    "status": "PASS",
+    "exit": 21,
+    "stdout": "Actual Git blob: 9a1b7cb8351c6ae398d81e5c8d08127321d9d741\n",
+    "stderr": "FAIL: original source archive differs from frozen author Git blob\n"
+  },
+  "polynomial": {
+    "status": "PASS",
+    "checks": {
+      "P_x": true,
+      "P_y": true,
+      "Q_x": true,
+      "Q_y": true,
+      "jacobian_one": true,
+      "P_compact": true,
+      "Q_compact": true,
+      "recovery_x": true,
+      "recovery_r": true,
+      "PQ_plus_P3": true,
+      "hidden_cubic": true,
+      "derivative_at_hidden": true,
+      "elimination": true,
+      "denominator_polynomials_nonzero": true,
+      "origin": true,
+      "collision": true,
+      "negative_remove_y_detected": true,
+      "negative_characteristic_zero_detected": true
+    },
+    "char_zero_determinant_at_1_0": 5,
+    "scope": "Exact polynomial calculations; no inference of generic degree from sampled fibers."
+  },
+  "source": {
+    "status": "PASS",
+    "files": 15,
+    "theorem_declarations": 190,
+    "markers": [],
+    "import_cycles": [],
+    "local_import_graph": {
+      "DimensionTwoCounterexample.ActualIrreducibility": [
+        "DimensionTwoCounterexample.FieldExtension",
+        "DimensionTwoCounterexample.GenericCubicIrreducible"
+      ],
+      "DimensionTwoCounterexample.Certificate": [],
+      "DimensionTwoCounterexample.CounterexampleStatement": [
+        "DimensionTwoCounterexample.GenericCertificate"
+      ],
+      "DimensionTwoCounterexample.DegreeFromIrreducible": [
+        "DimensionTwoCounterexample.FieldExtension"
+      ],
+      "DimensionTwoCounterexample.EtalePresentation": [
+        "DimensionTwoCounterexample.CounterexampleStatement"
+      ],
+      "DimensionTwoCounterexample.FieldExtension": [
+        "DimensionTwoCounterexample.Reconstruction"
+      ],
+      "DimensionTwoCounterexample.FinalElementary": [
+        "DimensionTwoCounterexample.CounterexampleStatement",
+        "DimensionTwoCounterexample.FieldExtension"
+      ],
+      "DimensionTwoCounterexample.FinalTheorem": [
+        "DimensionTwoCounterexample.ActualIrreducibility",
+        "DimensionTwoCounterexample.EtalePresentation",
+        "DimensionTwoCounterexample.FinalElementary",
+        "DimensionTwoCounterexample.GeometricBridge"
+      ],
+      "DimensionTwoCounterexample.GenericCertificate": [],
+      "DimensionTwoCounterexample.GenericCubicIrreducible": [],
+      "DimensionTwoCounterexample.GeometricBridge": [
+        "DimensionTwoCounterexample.CounterexampleStatement",
+        "DimensionTwoCounterexample.DegreeFromIrreducible",
+        "DimensionTwoCounterexample.ActualIrreducibility"
+      ],
+      "DimensionTwoCounterexample.Reconstruction": [
+        "DimensionTwoCounterexample.GenericCertificate"
+      ],
+      "DimensionTwoCounterexample.Structural": [
+        "DimensionTwoCounterexample.Certificate"
+      ],
+      "DimensionTwoCounterexample": [
+        "DimensionTwoCounterexample.FinalTheorem",
+        "DimensionTwoCounterexample.Structural"
+      ],
+      "KernelAudit": [
+        "DimensionTwoCounterexample"
+      ]
+    },
+    "sha256": {
+      "DimensionTwoCounterexample/ActualIrreducibility.lean": "9c60155a0a8fd66b34ca2a5f77bc8f56fa101d957804ebc06ca436d82c82de3d",
+      "DimensionTwoCounterexample/Certificate.lean": "c641cf531df0cb52ad5b9101cf5688827641bebf2e34176b826294e2a338da81",
+      "DimensionTwoCounterexample/CounterexampleStatement.lean": "6e621adf4844b1edfebcd91bf8bb92ebc9e41fe7384938489ca253b4ed09aa79",
+      "DimensionTwoCounterexample/DegreeFromIrreducible.lean": "5ba5fe1453053065471cfe177ef5c7aa7d133598c6cda2f94e471fc9896f4aae",
+      "DimensionTwoCounterexample/EtalePresentation.lean": "69fd2e8414d931f92f79d015e05e7a4739ed372ab40f9973ca37377a96d7fdae",
+      "DimensionTwoCounterexample/FieldExtension.lean": "c7a41a72cd61a066bd9c0d11d6f1f389674e8c1b47e7eea66dccd566177fac3e",
+      "DimensionTwoCounterexample/FinalElementary.lean": "c91456a23978e484218abe8a7b0176b1f5a54eb7e15048ba597d353ccfaf82ea",
+      "DimensionTwoCounterexample/FinalTheorem.lean": "ca128a032c7b715ec2c909da23035fa5446430fae4a4d0e6d447652e3ac3cbb2",
+      "DimensionTwoCounterexample/GenericCertificate.lean": "3ad1f21c10fd4333b81f767627fb1efdf4f875facfe41fc1dd9b41eab612c80f",
+      "DimensionTwoCounterexample/GenericCubicIrreducible.lean": "86175e649f58d58e5143af03257734fb2bd6cb015268517762b57e9cfefd9177",
+      "DimensionTwoCounterexample/GeometricBridge.lean": "6d3ed483a0d0916b00757e3e9750393f1107a8d5043bbd4abd81036fa461f7bc",
+      "DimensionTwoCounterexample/Reconstruction.lean": "b44ce85709a909c2ecb355b63ea8812164be587fe03457eb47c94c47caf8a9e0",
+      "DimensionTwoCounterexample/Structural.lean": "33160525e83383db81d1a4f5f4337589169c96b7501451492e34223a3edb3407",
+      "DimensionTwoCounterexample.lean": "897ffd99c619046bff2603075bb608ff6a30fd1ffa87162cc0c3873557e327f4",
+      "KernelAudit.lean": "3257426a0299331fe564d787312208efeb43363326da6531f8d6aceea9ac1bac"
+    },
+    "limitation": "Lexical and import screening only; transitive kernel axioms come from CI receipts."
+  },
+  "elephant": {
+    "status": "PASS",
+    "ordered_event_ids": [
+      "archive",
+      "ci",
+      "audit"
+    ],
+    "provenance": [
+      "d09deacf37efecc3fc20d8d9480435e6d203c36e",
+      "41917931365",
+      "1a4a649c77df4d869cc88d48d76a46fa489c3725"
+    ],
+    "scope": "Ordering and provenance preservation only; retention metric deliberately unused because it divides its own total by itself."
+  },
+  "salmon": {
+    "status": "PASS",
+    "trace": {
+      "target": "audit",
+      "origins": [
+        [
+          "archive",
+          1.0
+        ]
+      ],
+      "origin_entropy": -0.0,
+      "unresolved_origin": 0.0,
+      "max_depth": 2
+    },
+    "scope": "Single-chain provenance bookkeeping; unit weights are edges, not evidential probabilities. One common source is not three independent proofs."
+  },
+  "circus": {
+    "status": "FAIL",
+    "input": {
+      "animal": "CIRCUS",
+      "claim": "Unqualified independent certification of the complete paper",
+      "pipeline": [
+        {
+          "stage": "definition",
+          "provenance_status": "documented"
+        },
+        {
+          "stage": "data_selection",
+          "provenance_status": "documented"
+        },
+        {
+          "stage": "labels",
+          "provenance_status": "documented"
+        },
+        {
+          "stage": "scoring",
+          "provenance_status": "documented"
+        },
+        {
+          "stage": "validation",
+          "provenance_status": "documented"
+        }
+      ],
+      "dependencies": [
+        {
+          "materiality": "material",
+          "feedback": false
+        }
+      ],
+      "risks": [
+        {
+          "materiality": "material",
+          "status": "unresolved",
+          "id": "external literature equivalence and independent expert review"
+        }
+      ],
+      "independent_checks": [
+        {
+          "id": "local exact polynomial arithmetic",
+          "status": "passed",
+          "frozen": true,
+          "independently_sourced": false
+        }
+      ]
+    },
+    "scope": "Rejection of an overbroad certification claim, not rejection of the Lean theorem."
+  },
+  "monster": {
+    "status": "FAIL",
+    "input": {
+      "animal": "MONSTER",
+      "preregistration": {
+        "registered_before_outcomes": true,
+        "protocol_id": "PROTOCOL.md parser controls"
+      },
+      "metric": {
+        "direction": "higher_is_better",
+        "tolerance": 1
+      },
+      "baseline": {
+        "matched": true
+      },
+      "conditions": [
+        {
+          "id": "allowed",
+          "registered": true,
+          "status": "complete",
+          "candidate": 1,
+          "baseline": 1
+        },
+        {
+          "id": "none",
+          "registered": true,
+          "status": "complete",
+          "candidate": 1,
+          "baseline": 1
+        },
+        {
+          "id": "sorry",
+          "registered": true,
+          "status": "complete",
+          "candidate": 1,
+          "baseline": 1
+        },
+        {
+          "id": "custom",
+          "registered": true,
+          "status": "complete",
+          "candidate": 1,
+          "baseline": 1
+        },
+        {
+          "id": "missing",
+          "registered": true,
+          "status": "complete",
+          "candidate": 1,
+          "baseline": 1
+        },
+        {
+          "id": "truncated",
+          "registered": true,
+          "status": "complete",
+          "candidate": 1,
+          "baseline": 1
+        },
+        {
+          "id": "wrong_name",
+          "registered": true,
+          "status": "complete",
+          "candidate": 1,
+          "baseline": 1
+        },
+        {
+          "id": "suffix_name",
+          "registered": true,
+          "status": "complete",
+          "candidate": 0,
+          "baseline": 1
+        },
+        {
+          "id": "duplicate",
+          "registered": true,
+          "status": "complete",
+          "candidate": 0,
+          "baseline": 1
+        },
+        {
+          "id": "contradictory",
+          "registered": true,
+          "status": "complete",
+          "candidate": 0,
+          "baseline": 1
+        },
+        {
+          "id": "reverse_contradictory",
+          "registered": true,
+          "status": "complete",
+          "candidate": 1,
+          "baseline": 1
+        },
+        {
+          "id": "trailing_junk",
+          "registered": true,
+          "status": "complete",
+          "candidate": 0,
+          "baseline": 1
+        }
+      ],
+      "failure_boundaries": []
+    },
+    "scope": "Frozen local test criteria, not prospective scientific preregistration. Baseline is explicit expected acceptance for the same cases."
+  },
+  "environment": {
+    "lean_available": false,
+    "lake_available": false,
+    "local_kernel_replay": "UNRESOLVED; use the preserved real GitHub Actions receipts"
+  }
+}

@@ -1,0 +1,325 @@
+⚠ [8026/8040] Built DimensionTwoCounterexample.GenericCubicIrreducible (7.4s)
+warning: DimensionTwoCounterexample/GenericCubicIrreducible.lean:77:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: DimensionTwoCounterexample/GenericCubicIrreducible.lean:105:2: Try `simp at hyroot` instead of `simpa using hyroot`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: DimensionTwoCounterexample/GenericCubicIrreducible.lean:101:55: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Polynomial.coeff_add, Polynomial.coeff_mul_C,
+  ̵  ̵ ̵ ̵Polynomial.coeff_C_mul_X,
+  ̲  ̲ ̲ ̲Polynomial.coeff_C, Polynomial.coeff_zero,
+  ̵  ̵ ̵ ̵if_pos, if_false, one_ne_zero, zero_add, add_zero, ̵m̵u̵l̵_̵z̵e̵r̵o̵,̵ ̵z̵e̵r̵o̵_̵m̵u̵l̵,̵
+      z̲e̲r̲o̲_̲mul,̲ ̲m̲u̲l̲_one] at hcoeff
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/GenericCubicIrreducible.lean:101:65: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Polynomial.coeff_add, Polynomial.coeff_mul_C,
+  ̵  ̵ ̵ ̵Polynomial.coeff_C_mul_X,
+  ̲  ̲ ̲ ̲Polynomial.coeff_C, Polynomial.coeff_zero,
+  ̵  ̵ ̵ ̵if_pos, if_false, one_ne_zero, zero_add, add_zero, ̵m̵u̵l̵_̵z̵e̵r̵o̵,̵ ̵z̵e̵r̵o̵_̵m̵u̵l̵,̵
+      mul_z̲e̲r̲o,̲ ̲m̲u̲l̲_̲o̲ne] at hcoeff
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/GenericCubicIrreducible.lean:102:4: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Polynomial.coeff_add, Polynomial.coeff_mul_C, Polynomial.coeff_C_mul_X,
+  ̲  ̲ ̲ ̲Polynomial.coeff_C, Polynomial.coeff_zero, if_pos, if_false, one_ne_zero, zero_add, add_zero,
+  ̲  ̲ ̲ ̲mul_zero, z̵e̵r̵o̵_̵m̵u̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵m̵u̵l̵_̵o̵n̵e̵]̵z̲e̲r̲o̲_̲m̲u̲l̲]̲ at hcoeff
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8027/8040] Built DimensionTwoCounterexample.Certificate (29s)
+⚠ [8028/8040] Built DimensionTwoCounterexample.GenericCertificate (25s)
+warning: DimensionTwoCounterexample/GenericCertificate.lean:63:2: Try `simp at hx'` instead of `simpa using hx'`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: DimensionTwoCounterexample/GenericCertificate.lean:60:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.Generic.x_ne_zero`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/GenericCertificate.lean:68:2: Try `simp at hq'` instead of `simpa using hq'`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: DimensionTwoCounterexample/GenericCertificate.lean:65:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.Generic.q_ne_zero`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/GenericCertificate.lean:73:2: Try `simp at hu'` instead of `simpa using hu'`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: DimensionTwoCounterexample/GenericCertificate.lean:70:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.Generic.u_ne_zero`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/GenericCertificate.lean:78:2: Try `simp at hw'` instead of `simpa using hw'`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: DimensionTwoCounterexample/GenericCertificate.lean:75:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.Generic.w_ne_zero`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/GenericCertificate.lean:87:2: Try `simp at hQ'` instead of `simpa using hQ'`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: DimensionTwoCounterexample/GenericCertificate.lean:84:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.Generic.Q_ne_zero`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/GenericCertificate.lean:136:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.Generic.collision_value`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/GenericCertificate.lean:140:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.Generic.origin_value`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8029/8040] Built DimensionTwoCounterexample.Structural (15s)
+warning: DimensionTwoCounterexample/Structural.lean:106:14: unused variable `Z`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DimensionTwoCounterexample/Structural.lean:108:12: unused variable `Y`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8030/8040] Built DimensionTwoCounterexample.CounterexampleStatement (19s)
+⚠ [8031/8040] Built DimensionTwoCounterexample.Reconstruction (15s)
+warning: DimensionTwoCounterexample/Reconstruction.lean:33:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.Reconstruction.includePolynomial_injective`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/Reconstruction.lean:84:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.Reconstruction.q_definition_mapped`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8032/8040] Built DimensionTwoCounterexample.EtalePresentation (18s)
+warning: DimensionTwoCounterexample/EtalePresentation.lean:158:27: This simp argument is unused:
+  sourceCopyVariable
+
+Hint: Omit it from the simp argument list.
+  simp [graphEvaluation, s̵o̵u̵r̵c̵e̵C̵o̵p̵y̵V̵a̵r̵i̵a̵b̵l̵e̵,̵ ̵sourceVariable, coordinateRingHom, coordinateAlgHom, outputPolynomial,
+  ̲  ̲ ̲ ̲ ̲ ̲SourceCopy.up]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/EtalePresentation.lean:158:47: This simp argument is unused:
+  sourceVariable
+
+Hint: Omit it from the simp argument list.
+  simp [graphEvaluation, sourceCopyVariable, s̵o̵u̵r̵c̵e̵V̵a̵r̵i̵a̵b̵l̵e̵,̵coordinateRingHom, coordinateAlgHom,
+  ̲  ̲ ̲ ̲ ̲ ̲outputPolynomial, SourceCopy.up]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/EtalePresentation.lean:255:58: This simp argument is unused:
+  graphVariable
+
+Hint: Omit it from the simp argument list.
+  simp [graphQuotientToSourceCopy, graphEvaluation, g̵r̵a̵p̵h̵V̵a̵r̵i̵a̵b̵l̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵sourceToGraphQuotient, sourceCopyAlgebra,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲SourceCopy.ringEquiv,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵SourceCopy.up, sourceCopyVariable, sourceVariable, sourceX, sourceY,
+            Generic.x, Generic.y, liftSourcePolynomial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/EtalePresentation.lean:258:32: This simp argument is unused:
+  liftSourcePolynomial
+
+Hint: Omit it from the simp argument list.
+  simp [graphQuotientToSourceCopy, graphEvaluation, graphVariable, sourceToGraphQuotient,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲sourceCopyAlgebra, SourceCopy.ringEquiv, SourceCopy.up, sourceCopyVariable,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲sourceVariable, sourceX, sourceY, Generic.x, G̵e̵n̵e̵r̵i̵c̵.̵y̵,̵ ̵l̵i̵f̵t̵S̵o̵u̵r̵c̵e̵P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵]̵G̲e̲n̲e̲r̲i̲c̲.̲y̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/EtalePresentation.lean:234:2: 'change graphQuotientToSourceCopy (sourceCopyToGraphQuotient f) = f' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DimensionTwoCounterexample/EtalePresentation.lean:275:52: This simp argument is unused:
+  graphVariable
+
+Hint: Omit it from the simp argument list.
+  simp [sourceCopyToGraphQuotient, sourceToGraphQuotient, graphQuotientToSourceCopy,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲graphEvaluation, g̵r̵a̵p̵h̵V̵a̵r̵i̵a̵b̵l̵e̵,̵sourceCopyAlgebra, SourceCopy.ringEquiv, SourceCopy.up, sourceCopyVariable,
+          sourceVariable, sourceX, sourceY, Generic.x, Generic.y, liftSourcePolynomial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/EtalePresentation.lean:278:30: This simp argument is unused:
+  liftSourcePolynomial
+
+Hint: Omit it from the simp argument list.
+  simp [sourceCopyToGraphQuotient, sourceToGraphQuotient, graphQuotientToSourceCopy,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲graphEvaluation, graphVariable, sourceCopyAlgebra, SourceCopy.ringEquiv, SourceCopy.up,
+          sourceCopyVariable, sourceVariable, sourceX, sourceY, Generic.x, G̵e̵n̵e̵r̵i̵c̵.̵y̵,̵ ̵l̵i̵f̵t̵S̵o̵u̵r̵c̵e̵P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵]̵G̲e̲n̲e̲r̲i̲c̲.̲y̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/EtalePresentation.lean:265:2: 'change sourceCopyToGraphQuotient (graphQuotientToSourceCopy f) = f' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8033/8040] Built DimensionTwoCounterexample.FieldExtension (20s)
+warning: DimensionTwoCounterexample/FieldExtension.lean:43:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.FieldExtension.targetInE_apply_zero`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/FieldExtension.lean:47:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.FieldExtension.targetInE_apply_one`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/FieldExtension.lean:51:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.FieldExtension.cubic_monic`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/FieldExtension.lean:67:8: automatically included section variable(s) unused in theorem `_private.DimensionTwoCounterexample.FieldExtension.0.DimensionTwoCounterexample.FieldExtension.source_polynomial_mem_adjoin`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/FieldExtension.lean:113:8: automatically included section variable(s) unused in theorem `_private.DimensionTwoCounterexample.FieldExtension.0.DimensionTwoCounterexample.FieldExtension.target_mem_adjoin`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/FieldExtension.lean:117:8: automatically included section variable(s) unused in theorem `_private.DimensionTwoCounterexample.FieldExtension.0.DimensionTwoCounterexample.FieldExtension.hidden_mem_adjoin_simple`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8034/8040] Built DimensionTwoCounterexample.FinalElementary (15s)
+warning: DimensionTwoCounterexample/FinalElementary.lean:59:2: Try `simp at h0` instead of `simpa using h0`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: DimensionTwoCounterexample/FinalElementary.lean:64:2: Try `simp at h0` instead of `simpa using h0`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: DimensionTwoCounterexample/FinalElementary.lean:131:2: Try `simp at hcollision` instead of `simpa using hcollision`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8035/8040] Built DimensionTwoCounterexample.DegreeFromIrreducible (23s)
+warning: DimensionTwoCounterexample/DegreeFromIrreducible.lean:28:8: automatically included section variable(s) unused in theorem `_private.DimensionTwoCounterexample.DegreeFromIrreducible.0.DimensionTwoCounterexample.DegreeFromIrreducible.cubic_as_standard_cubic`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/DegreeFromIrreducible.lean:78:24: This simp argument is unused:
+  Polynomial.aeval_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Polynomial.derivative_add, Polynomial.derivative_mul, Polynomial.derivative_C,
+  ̲  ̲ ̲ ̲Polynomial.derivative_X, Polynomial.derivative_pow, zero_mul, mul_zero, zero_add, one_mul,
+      Polynomial.aeval_add, Polynomial.aeval_mul, Polynomial.aeval_C, Polynomial.aeval_X,
+  ̲  ̲ ̲ ̲P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵.̵a̵e̵v̵a̵l̵_̵o̵n̵e̵,̵ ̵Polynomial.aeval_zero, map_pow, map_one, map_zero, pow_zero, pow_one, Nat.reduceSub, mul_one,
+  ̲  ̲ ̲ ̲add_zero, map_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/DegreeFromIrreducible.lean:78:46: This simp argument is unused:
+  Polynomial.aeval_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Polynomial.derivative_add, Polynomial.derivative_mul, Polynomial.derivative_C,
+  ̲  ̲ ̲ ̲Polynomial.derivative_X, Polynomial.derivative_pow, zero_mul, mul_zero, zero_add, one_mul,
+      Polynomial.aeval_add, Polynomial.aeval_mul, Polynomial.aeval_C, Polynomial.aeval_X,
+  ̲  ̲ ̲ ̲Polynomial.aeval_one, P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵.̵a̵e̵v̵a̵l̵_̵z̵e̵r̵o̵,̵map_pow, map_one, map_zero, pow_zero, pow_one, Nat.reduceSub, mul_one,
+      add_zero, map_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/DegreeFromIrreducible.lean:79:22: This simp argument is unused:
+  map_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Polynomial.derivative_add, Polynomial.derivative_mul,
+  ̵  ̵ ̵ ̵Polynomial.derivative_C,
+  ̲  ̲ ̲ ̲Polynomial.derivative_X,
+  ̵  ̵ ̵ ̵Polynomial.derivative_pow, zero_mul, mul_zero, zero_add, one_mul,
+      Polynomial.aeval_add, Polynomial.aeval_mul, Polynomial.aeval_C,
+  ̵  ̵ ̵ ̵Polynomial.aeval_X,
+  ̲  ̲ ̲ ̲Polynomial.aeval_one, Polynomial.aeval_zero,
+  ̵  ̵ ̵ ̵map_pow, map_one, m̵a̵p_̵z̵e̵r̵o,̵ ̵p̵o̵w_zero, pow_one, Nat.reduceSub,
+      mul_one, add_zero, map_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/DegreeFromIrreducible.lean:79:32: This simp argument is unused:
+  pow_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Polynomial.derivative_add, Polynomial.derivative_mul, Polynomial.derivative_C,
+  ̲  ̲ ̲ ̲Polynomial.derivative_X, Polynomial.derivative_pow, zero_mul, mul_zero, zero_add, one_mul,
+      Polynomial.aeval_add, Polynomial.aeval_mul, Polynomial.aeval_C, Polynomial.aeval_X,
+  ̲  ̲ ̲ ̲Polynomial.aeval_one, Polynomial.aeval_zero, map_pow, map_one, map_zero, p̵o̵w̵_̵z̵e̵r̵o̵,̵ ̵pow_one, Nat.reduceSub,
+      mul_one, add_zero, map_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/DegreeFromIrreducible.lean:80:23: This simp argument is unused:
+  map_ofNat
+
+Hint: Omit it from the simp argument list.
+  simp only [Polynomial.derivative_add, Polynomial.derivative_mul, Polynomial.derivative_C,
+  ̲  ̲ ̲ ̲Polynomial.derivative_X, Polynomial.derivative_pow, zero_mul, mul_zero, zero_add, one_mul,
+      Polynomial.aeval_add, Polynomial.aeval_mul, Polynomial.aeval_C, Polynomial.aeval_X,
+  ̲  ̲ ̲ ̲Polynomial.aeval_one, Polynomial.aeval_zero, map_pow, map_one, map_zero, pow_zero, pow_one,
+  ̲  ̲ ̲ ̲Nat.reduceSub, mul_one, a̵d̵d̵_̵z̵e̵r̵o̵,̵ ̵m̵a̵p̵_̵o̵f̵N̵a̵t̵]̵a̲d̲d̲_̲z̲e̲r̲o̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DimensionTwoCounterexample/DegreeFromIrreducible.lean:113:5: unused variable `hirr`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8036/8040] Built DimensionTwoCounterexample.ActualIrreducibility (53s)
+warning: DimensionTwoCounterexample/ActualIrreducibility.lean:160:8: automatically included section variable(s) unused in theorem `_private.DimensionTwoCounterexample.ActualIrreducibility.0.DimensionTwoCounterexample.ActualIrreducibility.K_le_E`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/ActualIrreducibility.lean:179:8: automatically included section variable(s) unused in theorem `_private.DimensionTwoCounterexample.ActualIrreducibility.0.DimensionTwoCounterexample.ActualIrreducibility.E_le_restrict_KQ`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: DimensionTwoCounterexample/ActualIrreducibility.lean:210:31: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: DimensionTwoCounterexample/ActualIrreducibility.lean:211:32: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: DimensionTwoCounterexample/ActualIrreducibility.lean:362:0: automatically included section variable(s) unused in theorem `DimensionTwoCounterexample.ActualIrreducibility.polynomial_adjoin_le_field_adjoin`:
+  [CharP k 2]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharP k 2] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [8037/8040] Built DimensionTwoCounterexample.GeometricBridge (24s)
+✔ [8038/8040] Built DimensionTwoCounterexample.FinalTheorem (4.4s)
+✔ [8039/8040] Built DimensionTwoCounterexample (3.7s)
+Build completed successfully (8040 jobs).
